@@ -42,6 +42,7 @@ nav{
     width: 100%;
     top: 0;
     z-index: 1;
+    transition: all 0.2s ease;
 }
 
 nav ul{
@@ -129,7 +130,7 @@ nav li.search img:hover{
     height: 20vh;
     margin-left: 3vw;
 }
-#herotext{
+#heroText{
     min-width: 50vw;
     display: flex;
     flex-direction: column;
@@ -142,7 +143,7 @@ h1{
     font-family: 'reey-regular';
 }
 
-#herotext p{
+#heroText p{
     font-size: 1rem;
     margin: 2vh 0;
     font-weight: 400;
@@ -150,7 +151,7 @@ h1{
     margin-left: 3vw;
 }
 
-#herotext .tagline{
+#heroText .tagline{
     font-size: 1.5rem;
     margin: 10vh 0 5vh 0;
     font-weight: 600;
@@ -159,7 +160,7 @@ h1{
     margin-left: 3vw;
 }
 
-#herotext a.btn{
+#heroText a.btn{
     padding: 0.5vh 2vw; 
     background-color: rgba(255, 255, 255, 1);
     border-radius: 20px;
@@ -170,19 +171,19 @@ h1{
     margin: 10vh 0 5vh 3vw;
 }
 
-#herotext a.btn:hover{
+#heroText a.btn:hover{
     border: 1px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transform: scale(2);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-#herotext a.btn:active{
+#heroText a.btn:active{
     transform: scale(1);
     box-shadow: none;
 }
 
-#herotext .subtext{
+#heroText .subtext{
     max-width: 28vw;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.8);
@@ -202,8 +203,8 @@ h1{
 }
 
 #heroimage img#heroPlate{
-    width: 50vw;
-    height: 100vh;
+    width: 40vw;
+    height: 80vh;
 }
 
 #heroimage img#heroSauce{
@@ -213,4 +214,164 @@ h1{
 #heroimage img#heroLeaves{
     right: -5vw;
     top: 70vh;
+}
+
+/* menu Section */
+#menu{
+    height: 120vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+    margin: 4vh 0;
+    color: #343434;
+}
+
+#menu>header{
+    font-size: 6rem;
+    font-family: 'reey-regular';
+    margin-top: 5vh;
+}
+
+#menu #menuCards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 5vw;
+    gap: 2vw;
+}
+
+#menu #menuCards .card{
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5vh 2vw;
+    transition: all 0.5s ease;
+}
+
+#menu #menuCards .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#menu #menuCards .card>img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    margin-bottom: 5vh;
+}
+#menu #menuCards .card>.cardText{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 2vw;
+}
+#menu #menuCards .card>.cardText>h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+#menu #menuCards .card>.cardText>p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+}
+#menu a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #343434;
+    text-decoration: none;
+    border-bottom: 1px solid #343434;
+    transition: all 0.5s ease;
+    padding: 1.7vh 4vw;
+    color: #fff;
+    border-radius: 2.5vw;
+}
+#menu a:hover{
+    color: #f5c518;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+/* About Section */
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+    margin: 4vh 0;
+    background-color: #27292b;
+}
+
+#about>header{
+    font-size: 6rem;
+    font-family: 'reey-regular';
+    margin-top: 5vh;
+    color: #fff;
+}
+
+#about #aboutCards{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5vh 5vw;
+    gap: 2vw;
+}
+
+#about #aboutCards .card{
+    width: 30vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5vh 2vw;
+    transition: all 0.5s ease;
+}
+
+#about #aboutCards .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #f5c518;
+    color: #27292b;
+}
+
+#about #aboutCards .card>img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    margin-bottom: 5vh;
+}
+
+#about a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #f5c518;
+    text-decoration: none;
+    border-bottom: 1px solid #f5c518;
+    transition: all 0.5s ease;
+    padding: 1.7vh 4vw;
+    color: #27292b;
+    border-radius: 2.5vw;
+}
+
+#about .btn{
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: #cecece;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    padding: 1.7vh 4vw;
+    color: #343434;
+    border-radius: 1.5vw;
 }
