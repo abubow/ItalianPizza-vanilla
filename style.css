@@ -183,7 +183,34 @@ h1{
 }
 
 #herotext .subtext{
-    max-width: 25vw;
+    max-width: 28vw;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.8);
+}
+
+#heroimage{
+    width: 60vw;
+    height: 100vh;
+    position: relative;
+}
+
+#heroimage img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+}
+
+#heroimage img#heroPlate{
+    width: 50vw;
+    height: 100vh;
+}
+
+#heroimage img#heroSauce{
+    top: 80vh;
+    right: 40vw;
+}
+#heroimage img#heroLeaves{
+    right: -5vw;
+    top: 70vh;
 }
