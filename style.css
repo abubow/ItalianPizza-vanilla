@@ -375,3 +375,253 @@ h1{
     color: #343434;
     border-radius: 1.5vw;
 }
+
+
+/* Discount Section */
+#discounts{
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+    margin: 4vh 0;
+    color: #343434;
+} 
+
+#discounts>.discountCard{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5vh 0;
+    gap: 2vw;
+}
+
+#discounts>.discountCard>#discountsText{
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 2vw;
+}
+
+#discounts>.discountCard>#discountsText>h2{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2vh;
+    line-height: 0.98;
+}
+
+#discounts>.discountCard>#discountsText>p{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+#discounts>.discountCard>#discountsText>a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #343434;
+    text-decoration: none;
+    border-bottom: 1px solid #343434;
+    transition: all 0.5s ease;
+    padding: 1.7vh 4vw;
+    color: #fff;
+    border-radius: 2.5vw;
+    margin-top: 4vh;
+}
+
+/* Pizzas Section */
+.pizzas{
+    position: relative;
+    height: 140vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+    margin: 4vh 0;
+    background-color: #27292b;
+    background-image: url(images/Background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pizzas>h3 {
+    font-size: 4rem;
+    font-family: 'reey-regular';
+    margin-top: 5vh;
+    color: #fff;
+    padding-top: 5vh;
+}
+
+.pizzas>img{
+    position: absolute;
+    top: 0;
+    right: 0;  
+}
+
+.pizzas>img#pizzaBody{
+    top: 40vh;
+    right: 10vw;
+}
+
+.pizzas>img#pizzaSlice{
+    top: 90vh;
+    right: 40vw;
+}
+.pizzas>img#pizzaSlice:hover{
+    transform: rotate(-10deg) scale(1.1);
+    top: 75vh;
+    right: 30vw;
+}
+
+.pizzas>div{
+    width: 10vw;
+    height: 2vh;
+    background-color: #fff;
+    margin-top: 5vh;
+}
+
+.pizzas>img#pizzaLeaves{
+    top: -10vh;
+    right: 1vw;
+    width: 100vw;
+}
+
+.pizzas>p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2vh 0;
+    padding-top: 2vh;
+    color: #fff;
+    max-width: 50vw;
+}
+
+/* Story Section */
+#story{
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+    margin: 4vh 0;
+    color: #343434;
+}
+
+#story>.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5vh 0;
+    gap: 2vw;
+}   
+
+#story>.container>.Cards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 0;
+    gap: 2vw;
+}
+
+#story>.container>.Cards>.card{
+    width: 30vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5vh 2vw;
+    transition: all 0.5s ease;
+}
+
+#story>.container>.Cards>.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #f5c518;
+    color: #27292b;
+}
+
+#story>.container>.Cards>.card>h3{
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 2vh;
+    line-height: 0.98;
+    font-family: 'reey-regular';
+}
+
+#story>.container>.Cards>.card>p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+/* footer Section */
+footer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+    margin: 4vh 0;
+    color: #343434;
+}
+
+footer>.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5vh 0;
+    gap: 2vw;
+    color: #343434;
+}
+
+footer>.container>.footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 0;
+    gap: 2vw;
+}
+
+footer>.container>.footer>.footerLogo{
+    width: 30vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5vh 2vw;
+    transition: all 0.5s ease;
+}
+
+footer>.container>.footer>.footerLogo>h3{
+    font-size: 4rem;
+    font-weight: 100;
+    margin-bottom: 2vh;
+    line-height: 0.98;
+    font-family: 'reey-regular';
+}
+
+footer>.container>.footer>.footerLogo>p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+
